@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CTP.Util\CTP.Util.csproj" />
+    <ProjectReference Include="..\Model\CTP.Model.csproj" />
+  </ItemGroup>
+
+</Project>

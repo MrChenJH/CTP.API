@@ -1,0 +1,26 @@
+﻿{
+    "rules": [
+        {
+            "DataDriver": "mysql",
+            "Class": "CTP.Redis.Request.Examination.Emenu",
+            "Factory": "CTP.Redis.Factory.Examination.MenuFactory",
+            "Key": "Emenu",
+            "LinkKey": "LinkEmenu",
+            "MaxIdSql": "select MAX(auto_no) from sys_menu_list",
+            "Del": "delete  from   sys_menu_list where auto_no=@Id",
+            "Update": "UPDATE sys_menu_list set m_name=@Mname,m_link=@Mlink  where auto_no=@Id",
+            "Insert": "insert into sys_menu_list(auto_no,parent_id,m_name,top_id,m_link,m_icon,creator,create_time)VALUES(@maxId,@ParentId,@Mname,@TabId,@Mlink,@Micon,'admin','2017-08-02')"
+        },
+        {
+            "DataDriver": "mysql",
+            "Class": "CTP.Redis.Request.Examination.Etab",
+            "Factory": "CTP.Redis.Factory.Examination.TabFactory",
+            "Key": "Etab",
+            "LinkKey": "LinkEtab",
+            "MaxIdSql": "select  MAX(auto_no) from sys_menu_top",
+            "Del": "delete  from sys_menu_top where auto_no=@Id",
+            "Update": "UPDATE sys_menu_top set  map_icon=@MIcon,m_name=@MName where auto_no=@Id",
+            "Insert": "INSERT sys_menu_top(auto_no,map_icon,m_name,creator,create_time)values(@maxId,@MIcon,@MName,'admin','2017-08-02')"
+        }
+    ]
+}

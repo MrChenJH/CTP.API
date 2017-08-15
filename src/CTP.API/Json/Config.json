@@ -1,0 +1,10 @@
+﻿{
+    "profile": {
+        "IntranetAddress": "http://Localhost:3850/:",
+        "ExternalAddress": "http://192.168.1.41:3850/",
+        "RedisAdress": "127.0.0.1",
+        "LinkKey": "Link",
+        "SqlServerCon": "Data Source=192.168.1.237;Initial Catalog=kk2006;User Id=sa;Password=mantis",
+        "MySqlCon": "Data Source=192.168.1.182;Initial Catalog=kk2006;User Id=sa1;Password=sasa;Allow User Variables=True;charset=UTF8;pooling=false;Max Pool Size=100;"
+    }
+}

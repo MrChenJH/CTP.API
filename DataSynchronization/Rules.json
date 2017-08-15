@@ -1,0 +1,15 @@
+﻿{
+    "rules": [
+        {
+            "DataDriver": "mysql",
+            "Class": "CTP.Redis.Request.Examination.Emenu",
+            "Factory": "CTP.Redis.Factory.Examination.MenuFactory",
+            "Key": "Emenu",
+            "LinkKey": "LinkEmenu",
+            "MaxIdSql": "select MAX(auto_no) from sys_menu_list",
+            "Del": "delete  from   sys_menu_list where auto_no=@Id",
+            "Update": "UPDATE sys_menu_list set  parent_id=@ParentId,m_name=@Mname,is_category=@IsCategory,has_child=@HasChild,m_link=@Mlink  where auto_no=@Id",
+            "Insert": "insert into sys_menu_list(auto_no,parent_id,m_name,is_category,has_child,m_link,creator,create_time)VALUES(@maxId,@ParentId,Mname,@IsCategory,@HasChild,@Mlink,'admin','2017-08-02')"
+        }
+    ]
+}

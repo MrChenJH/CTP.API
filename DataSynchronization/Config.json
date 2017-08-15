@@ -1,0 +1,10 @@
+﻿{
+    "profile": {
+        "url1": "http://Localhost:3850/:",
+        "url2": "http://192.168.1.41:3850/",
+        "ip": "192.168.1.141",
+        "LinkKey": "Link",
+        "sqlservercon": "Data Source=192.168.1.237;Initial Catalog=kk2006;User Id=sa;Password=mantis",
+        "mysqlcon": "Data Source=192.168.1.125;Initial Catalog=db_product_main;User Id=root;Password=123456abcD;Allow User Variables=True;charset=gb2312;pooling=false;Max Pool Size=100;"
+    }
+}
